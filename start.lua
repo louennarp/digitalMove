@@ -36,6 +36,7 @@ function pickUp()
   turtle.forward()
   turtle.forward()
   turtle.turnLeft()
+  turtle.forward()
 end
 
 function placeUp()
@@ -76,6 +77,7 @@ function placeUp()
   turtle.forward()
   turtle.forward()
   turtle.turnLeft()
+  turtle.forward()
 end
 
 local done = false
