@@ -1,84 +1,76 @@
 function pickUp()
   turtle.select(1)
-  turtle.digDown()
+  turtle.digUp()
 
   turtle.select(2)
 
   turtle.forward()
   turtle.forward()
-  turtle.digDown()
+  turtle.up()
+  turtle.digUp()
 
   turtle.turnLeft()
   turtle.forward()
-  turtle.digDown()
+  turtle.digUp()
 
   turtle.forward()
-  turtle.digDown()
+  turtle.digUp()
 
   turtle.turnLeft()
   turtle.forward()
-  turtle.digDown()
-
-  turtle.forward()
-  turtle.digDown()
-
-  turtle.forward()
-  turtle.digDown()
+  turtle.digUp()
 
   turtle.select(3)
+  turtle.dig()
 
-  turtle.down()
-  turtle.digDown()
-  turtle.up()
+  turtle.select(2)
+
+  turtle.forward()
+  turtle.digUp()
 
   turtle.select(4)
-  turtle.forward()
-  turtle.digDown()
+  turtle.dig()
 
   turtle.turnLeft()
+  turtle.down()
   turtle.forward()
   turtle.forward()
   turtle.turnLeft()
 end
 
-function placeDown()
+function placeUp()
   turtle.select(1)
-  turtle.placeDown()
+  turtle.placeUp()
 
   turtle.select(2)
 
   turtle.forward()
   turtle.forward()
-  turtle.placeDown()
+  turtle.up()
+  turtle.placeUp()
 
   turtle.turnLeft()
   turtle.forward()
-  turtle.placeDown()
+  turtle.placeUp()
 
   turtle.forward()
-  turtle.placeDown()
+  turtle.placeUp()
 
   turtle.turnLeft()
   turtle.forward()
-  turtle.placeDown()
+  turtle.placeUp()
 
   turtle.forward()
-  turtle.placeDown()
+  turtle.placeUp()
 
   turtle.select(3)
 
   turtle.down()
-  turtle.placeDown()
-  turtle.up()
-
-  turtle.select(2)
-
-  turtle.forward()
-  turtle.placeDown()
+  turtle.placeUp()
 
   turtle.select(4)
   turtle.forward()
-  turtle.placeDown()
+  turtle.placeUp()
 
   turtle.turnLeft()
   turtle.forward()
@@ -88,7 +80,7 @@ end
 
 local done = false
 while not done do
-  placeDown()
+  placeUp()
   os.sleep(60*60*1)
   pickUp()
   for i=1,100 do
